@@ -35,4 +35,4 @@ jobs:
         run: echo Hello, world!
 
       - name: Deploy with rsync
-        run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} cd /cicd-example && ./deploy.sh
+        run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} cd cicd-example && ./deploy.sh
