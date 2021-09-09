@@ -1,0 +1,18 @@
+{
+	"name": "cicd-example",
+	"version": "1.0.0",
+	"main": "src/index.js",
+	"repository": "git@github.com:blackparadise0407/cicd-example.git",
+	"author": "blackparadise0407 <blackparadise0407@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.12"
+	},
+	"scripts": {
+		"start": "node .",
+		"dev": "nodemon"
+	}
+}
