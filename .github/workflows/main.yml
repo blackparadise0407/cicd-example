@@ -30,9 +30,5 @@ jobs:
       - name: Adding Known Hosts
         run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      - name: Deploy with rsync
+      - name: Deploy
         run: ssh -t ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd cicd-example; ./deploy.sh"
